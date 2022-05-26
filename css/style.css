@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+
+    height: 100vh;
+}
+.button-block {
+    position: absolute;
+    top: -20px;
+left: -100px;
+    background: rgb(136, 71, 101);
+    z-index: 4;
+    width: 180px;
+    height: 120px;
+    padding: 40px 80px;
+    border-radius: 60%;
+} 
+.button-block .fa-bars {
+    margin: 10px 32px;
+    font-size: 26px;
+}
+ .button-block .fa-xmark{
+    margin: 10px 32px;
+    font-size: 26px;
+    display: none;
+    color: white;
+ }
+.back {
+    width: 100vw;
+    position: relative;
+    height: 100%;
+    background-color: rgb(78, 64, 64);
+    overflow: hidden;
+
+}
+
+.rotate{
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    top: 0px;
+    height: 140%;
+    width: 100vw;
+    background: white;
+}
+#navbar{
+position: absolute;
+bottom: 120px;
+left: 40px;
+}
+#navbar ul li {
+    list-style-type: none;
+    margin: 28px 0px;
+}
+#navbar ul li  a {
+    margin: 30px 0px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+.rotate .middle-contain{
+    padding: 10px 200px;
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+.rotate .middle-contain .block-contain{
+    padding: 10px 150px;
+}
+.rotate .middle-contain .block-contain .section h1 {
+    font-size: 2.5em;
+    margin: 15px 0px;
+}
+.rotate .middle-contain .block-contain .section p ,.rotate .middle-contain .block-contain .img p{
+    line-height: 22px;
+    font-size: 18px;
+
+}
+.rotate .middle-contain .block-contain .section {
+    margin-bottom: 20px;
+}
+.rotate .middle-contain .block-contain .img span {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.rotate .middle-contain .block-contain .img img {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+}
+.change {
+    position: absolute;
+    top: 10px;   
+    
+    
+    transform-origin: top left ; 
+    transform: rotate(-30deg);
+}
+
+@media screen and (max-width:1200px) {
+    .rotate .middle-contain{
+        padding: 10px 10px;
+    
+        margin-top: 60px;
+      
+    }
+
+    .rotate .middle-contain .block-contain{
+        padding: 10px 10px;
+        height: 120vh;
+    }
+}
+@media screen and (max-width:545px) {
+    .rotate .middle-contain{
+        padding: 10px 10px;
+        margin-top: 60px;
+    }
+
+    .rotate .middle-contain .block-contain{
+        padding: 10px 10px;
+      
+    }
+    .rotate .middle-contain .block-contain .section p ,.rotate .middle-contain .block-contain .img p{
+        line-height: 18px;
+        font-size: 16px;
+    
+    }
+}
